@@ -1,0 +1,33 @@
+.pricing {
+    overflow: hidden;
+    user-select: none;
+    margin-top: 140px;
+        &__container{
+            position: relative;
+        }
+        &__decor {
+            position: absolute;
+            transform: rotate(-45deg);
+            width: 200px;
+            height: 200px;
+            right: -20%;
+            bottom: 40%;
+            z-index: 2;
+            img {
+                max-width: 100%;
+                max-height: 100% ;
+                }
+        }
+    @media (max-width: 768.98px) {
+        margin-top: 100px;
+        &__decor {
+            width: 150px;
+        }
+    }
+    @media (max-width: 425.98px){
+        margin-top: 70px;
+        &__decor {
+            right: -35%;
+        }
+    }
+}
